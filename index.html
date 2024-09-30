@@ -13,28 +13,40 @@
 <body>
     <!-- ============= HEADER ============== -->
     <header class="header" id="header">
-        <div class="header__container">
+         <div class="header__container">
             <a href="#" class="header__logo">
-                <i class="ri-cloud-fill"></i>
-                <span>Cloud</span>
+               <!-- <i class="ri-cloud-fill"></i> -->
+               <!-- <span>الموقع الرسمي لفضيلة الشيخ أبي عبد المعز محمد علي فركوس</span> -->
+                <div class="logof">
+                    <img class="logo1" src="img/1.png" alt="image">
+                    <img class="logo2" src="img/2.png" alt="image">
+                </div>
             </a>
+            <div class="header-date">
+                الإثنين ٢٦ / ربيع الأوّل / ١٤٤٦
+            </div>
+
             <button class="header__toggle" id="header-toggle">
-                <i class="ri-menu-line"></i>
+               <i class="ri-menu-line"></i>
             </button>
-        </div>
-    </header>
+
+            
+
+         </div>
+      </header>
 
     <!-- ============ SIDEBAR ============= -->
-     <nav class="sidebar" id="sidebar">
+    <nav class="sidebar" id="sidebar">
         <div class="sidebar__container">
             <div class="sidebar__user">
                 <div class="sidebar__img">
-                    <img src="img/perfil.png" alt="image">
+                    <img src="img/logo.png" alt="image">
                 </div>
 
                 <div class="sidebar__info">
-                    <h3>Rix Methil</h3>
-                    <span>rix123@email.com</span>
+                    <h5>الموقع الرسمي لفضيلة الشيخ <br>
+                         أبي عبد المعز محمد علي فركوس</h5>
+                    <span>www.ferkous.app</span>
                 </div>
             </div>
 
@@ -44,28 +56,68 @@
 
                     <div class="sidebar__list">
                         <a href="#" class="sidebar__link active-link">
-                            <i class="ri-pie-chart-2-fill"></i>
-                            <span>Dashboard</span>
+                            <i class="ri-home-3-line"></i>
+                            <span>الصفحة الرئيسية</span>
                         </a>
 
-                        <a href="" class="sidebar__link">
-                            <i class="ri-wallet-3-fill"></i>
-                            <span>My Wallet</span>
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-mic-2-line"></i>
+                            <span>الكلمات الشهرية</span>
                         </a>
 
-                        <a href="" class="sidebar__link"></a>
-                            <i class="ri-calendar-fill"></i>
-                            <span>Calendar</span>
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-book-open-line"></i>
+                            <span>أحاديث الأحكام</span>
                         </a>
 
-                        <a href="" class="sidebar__link"></a>
-                            <i class="ri-arrow-up-down-line"></i>
-                            <span>Recent Transactions</span>
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-quill-pen-line"></i>
+                            <span>الفتاوى</span>
                         </a>
                         
                         <a href="#" class="sidebar__link">
-                            <i class="ri-bar-chart-box-fill"></i>
-                            <span>Statistics</span>
+                            <i class="ri-file-copy-2-line"></i>
+                            <span>مقالات</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-eraser-line"></i>
+                            <span>توضيح إشكالات</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-headphone-line"></i>
+                            <span>صوتيات</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-git-repository-line"></i>
+                            <span>كتب</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-file-list-3-line"></i>
+                            <span>مجلة الإحياء</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-file-paper-2-line"></i>
+                            <span>مطويات</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-chat-off-line"></i>
+                            <span>افتراءات</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-chat-1-line"></i>
+                            <span>ردود و تعقيبات</span>
+                        </a>
+
+                        <a href="#" class="sidebar__link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>وقائع و توجيهات</span>
                         </a>
                     </div>
                 </div>
@@ -74,17 +126,17 @@
                     <h3 class="sidebar__title">SETTINGS</h3>
                     <div class="sidebar__list">
                         <a href="#" class="sidebar__link">
-                            <i class="ri-settings-3-fill"></i>
+                            <i class="ri-settings-3-line"></i>
                             <span>Settings</span>
                         </a>
 
                         <a href="#" class="sidebar__link">
-                            <i class="ri-mail-unread-fill"></i>
+                            <i class="ri-mail-unread-line"></i>
                             <span>My Messages</span>
                         </a>
 
                         <a href="#" class="sidebar__link">
-                            <i class="ri-notification-2-fill"></i>
+                            <i class="ri-notification-3-line"></i>
                             <span>Notifications</span>
                         </a>
                     </div>
@@ -93,15 +145,24 @@
 
             <div class="sidebar__actions">
                 <button>
-                    <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button"></i>
-                    <span>Theme</span>
+                    <i class="ri-moon-line sidebar__link sidebar__theme" id="theme-button">
+                        <span>Theme</span>
+                    </i>
+                </button>
+
+                <button class="sidebar__link">
+                    <i class="ri-logout-box-r-line"></i>
+                    <span>Log Out</span>
                 </button>
             </div>
         </div>
-     </nav>
+    </nav>
      <!-- =========== MAIN ============ -->
-      <main class="main container" id="main">
+    <main class="main container" id="main">
         <h1>Sidebar Menu</h1>
-      </main>
+    </main>
+
+    <!-- =============MAIN JS ============== -->
+     <script src="js/main.js"></script>
 </body>
 </html>
