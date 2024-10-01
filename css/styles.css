@@ -437,3 +437,116 @@
     padding-left: 114px;
   }
 }
+
+/* ======= main ============= */
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding-inline: 1.5rem; */
+  /* display: grid; */
+  /* background: greenyellow; */
+  /* gap: 3rem; */
+  transition: background-color .4s;
+}
+.blocks{
+  /* grid-column: 1;   */
+  width: 75%;
+}
+
+.blocks .block{
+  margin-bottom: 1rem;
+  
+  /* background: green; */
+  padding: 1rem;
+  background-color: var(--body-color);
+  box-shadow: 2px 0 24px var(--shadow-color);
+  border-radius: 1rem;
+  /* background: red; */
+}
+
+.article {
+  width: 45rem;
+  /* background: gold; */
+  padding: 0rem 3rem;
+  margin: auto;
+}
+
+.article .article-title   {
+  /* background: red; */
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.article .article-span {
+  direction: rtl;
+}
+
+.main-side{
+  width: 25%;
+  padding-left: 1rem;
+  /* grid-column: 2; */
+  /* background: gray; */
+}
+
+.main-side .block{
+  padding: 1rem;
+  background: var(--body-color);
+  box-shadow: 2px 0 24px var(--shadow-color);
+  border-radius: 1rem;
+}
+/* 
+
+.logof {
+  position: relative;
+  background: red; 
+  width: 5.5rem;
+  height: 2.6rem ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+  
+*/
+
+.main-side .block{
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+
+.main-side .block .block-header h3 {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--title-color);
+}
+
+.block-content  {
+  /* decoration: none; */
+  direction: rtl;
+  /* background: red; */
+}
+.block-content div {
+  padding: 0.5rem 0;
+}
+.block-content a {
+  padding-top: 1rem;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.main-side .block .block-content .menu {
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.menu , .menu li{
+  direction: rtl;
+}
