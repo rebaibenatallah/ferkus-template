@@ -30,6 +30,9 @@ const showSidebar = (toggleId, sidebarId, headerId, mainId) =>{
  
  /*=============== DARK LIGHT THEME ===============*/ 
  const themeButton = document.getElementById('theme-button')
+ const logo1 = document.getElementById('logo1')
+ const logo2 = document.getElementById('logo2')
+
  const darkTheme = 'dark-theme'
  const iconTheme = 'ri-sun-fill'
  
@@ -46,15 +49,25 @@ const showSidebar = (toggleId, sidebarId, headerId, mainId) =>{
    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
    themeButton.classList[selectedIcon === 'ri-moon-clear-fill' ? 'add' : 'remove'](iconTheme)
- }
+}
  
  // Activate / deactivate the theme manually with the button
  themeButton.addEventListener('click', () => {
+    let s = document.getElementById('logo1').src;
      // Add or remove the dark / icon theme
      document.body.classList.toggle(darkTheme)
      themeButton.classList.toggle(iconTheme)
      // We save the theme and the current icon that the user chose
      localStorage.setItem('selected-theme', getCurrentTheme())
      localStorage.setItem('selected-icon', getCurrentIcon())
+     console.log(s.includes("img/1.png"))
+     console.log(s)
+     if( s.includes("img/1.png") ){
+        logo1.src="img/n1.png";
+        logo2.src="img/n2.png";
+     }else{
+        logo1.src="img/1.png";
+        logo2.src="img/2.png";
+     }
  })
  

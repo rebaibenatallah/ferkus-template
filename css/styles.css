@@ -87,6 +87,7 @@
 }
 
 
+
 /* ============= REUSABLE CSS CLASSES ============= */
 .container{
     margin-inline: 1.5rem;
@@ -119,8 +120,8 @@
 }
 
 .header-date {
-  border-left: 1px solid var(--title-color);
-  border-right: 1px solid var(--title-color);
+  border-left: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
   /* background: red; */
   font-size: 11px;
   height: 26px;
@@ -328,6 +329,158 @@
   background-color: var(--first-color);
 }
 
+
+/* ======= main ============= */
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color .4s;
+}
+/* ========== main block ================ */
+.blocks{
+  width: 75%;
+}
+
+.blocks .block1{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--body-color);
+  box-shadow: 2px 0 24px var(--shadow-color);
+  border-radius: 1rem;
+
+}
+
+.blocks .block-head {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blocks .block-head .th a {
+  color: var(--text-color);
+}
+
+.block-head .line {
+  border-left: 1px solid var(--text-color);
+  height: 1.5rem;
+  background: red;
+}
+
+.blocks .block-content .block-image {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.article {
+  width: 45rem;
+  padding: 0rem 3rem;
+  margin: auto;
+}
+
+.article .article-image {
+  border: 1px solid var(--text-color);
+  border-bottom: 0;
+  padding: 0.3rem;
+}
+
+.article .article-imge img {
+   width: 95%; 
+}
+
+.article .article-title   {
+  border: 1px solid var(--text-color);
+  border-top: 0;
+  /* background: red; */
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.article .article-span {
+  border: 1px solid var(--text-color);
+  border-top: 0;
+  padding: 0.5rem 0.5rem;
+  direction: rtl;
+}
+
+/* ========== main side ========= */
+.main-side{
+  width: 25%;
+  padding-left: 1rem;
+}
+
+.block2 {
+  padding: 1rem;
+  background: var(--body-color);
+  box-shadow: 2px 0 24px var(--shadow-color);
+  border-radius: 1rem;
+}
+
+.block2 {
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+
+.block2 .block-header h3 {
+  text-align: center;
+  padding-bottom: 5px;
+  color: var(--title-color);
+  border-bottom: 1px solid var(--title-color);
+}
+
+.block-content  {
+  /* decoration: none; */
+  direction: rtl;
+  /* background: red; */
+}
+.block-content div {
+  padding: 0.5rem 0;
+}
+.block-content a {
+  padding-top: 1rem;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ .block2 .block-content .menu {
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.menu , .menu li{
+  direction: rtl;
+}
+
+.leaf{
+  padding-top: 1rem;
+}
+
+.block-more p {
+  color: var(--title-color);
+}
+
+.footer{
+  /* background: red; */
+  padding: 1rem ;
+  margin-bottom: 1rem;
+  background-color: var(--body-color);
+  box-shadow: 2px 0 24px var(--shadow-color);
+  border-radius: 1rem;
+}
+
+.footer .content {
+  text-align: center;
+  font-size: 14px;
+}
+
 /* ========= BREAKPOINTS =========== */
 /* for small devices */
 @media screen and (max-width: 360px) {
@@ -369,6 +522,7 @@
 
 /* for large devices */
 @media screen and (min-width: 1150px) {
+  /* ============== header ================ */
   .header {
     margin: 1rem;
     padding-left: 340px;
@@ -392,6 +546,8 @@
     width: 12rem;
     height: 5rem;
   }
+
+  /* ================== sidebar ========== */
 
   .sidebar {
     left: 0;
@@ -426,6 +582,9 @@
   .show-sidebar .sidebar__link span {
     opacity: 0;
   }
+
+  /* =================== main ============= */
+
   .main {
     padding-left: 340px;
     padding-top: 8rem;
@@ -436,117 +595,33 @@
   .left-pd {
     padding-left: 114px;
   }
-}
 
-/* ======= main ============= */
-
-.main-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* padding-inline: 1.5rem; */
-  /* display: grid; */
-  /* background: greenyellow; */
-  /* gap: 3rem; */
-  transition: background-color .4s;
-}
-.blocks{
-  /* grid-column: 1;   */
-  width: 75%;
-}
-
-.blocks .block{
-  margin-bottom: 1rem;
   
-  /* background: green; */
-  padding: 1rem;
-  background-color: var(--body-color);
-  box-shadow: 2px 0 24px var(--shadow-color);
-  border-radius: 1rem;
-  /* background: red; */
 }
 
-.article {
-  width: 45rem;
-  /* background: gold; */
-  padding: 0rem 3rem;
-  margin: auto;
-}
-
-.article .article-title   {
-  /* background: red; */
-  padding: 1rem 0;
-  text-align: center;
-  color: var(--title-color);
-}
-
-.article .article-span {
-  direction: rtl;
-}
-
-.main-side{
-  width: 25%;
-  padding-left: 1rem;
-  /* grid-column: 2; */
-  /* background: gray; */
-}
-
-.main-side .block{
-  padding: 1rem;
-  background: var(--body-color);
-  box-shadow: 2px 0 24px var(--shadow-color);
-  border-radius: 1rem;
-}
-/* 
-
-.logof {
-  position: relative;
-  background: red; 
-  width: 5.5rem;
-  height: 2.6rem ;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-  
-*/
-
-.main-side .block{
-  position: relative;
-  align-items: center;
-  justify-items: center;
-  margin-bottom: 1rem;
-}
-
-.main-side .block .block-header h3 {
-  text-align: center;
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--title-color);
-}
-
-.block-content  {
-  /* decoration: none; */
-  direction: rtl;
-  /* background: red; */
-}
-.block-content div {
-  padding: 0.5rem 0;
-}
-.block-content a {
-  padding-top: 1rem;
-  position: relative;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-.main-side .block .block-content .menu {
-  padding: 0.5rem 2rem;
-  position: relative;
-}
-
-.menu , .menu li{
-  direction: rtl;
+@media screen and (max-width:1150px) {
+  .main-content{
+    display: block;
+  }
+  .main-side {
+    /* visibility: hidden; */
+    /* margin-right: 120%; */
+    /* background: red; */
+    width: 100%;
+    padding: 0;
+    /* display: none; */
+  }
+  .blocks{
+    width: 100%;
+  }
+  .blocks .block2 {
+    width: 100%;
+  }
+  .article {
+    width: 100%;
+    padding: 0;
+  }
+  .header-date {
+    display: none;
+  }
 }

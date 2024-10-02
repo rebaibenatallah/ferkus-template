@@ -1,0 +1,30 @@
+.container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    /* background: red; */
+}
+
+.image-box{
+    width: 100%;
+}
+.image-box input[type="radio"] {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid #555;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0 0 2px #000;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.image-box input[type="radio"]:hover {
+    transform: scale(1.1);
+    box-sizing: 0 0 5px #000;
+}
