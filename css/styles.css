@@ -422,6 +422,12 @@
   margin-top: 1rem;
 }
 
+.article ul {
+  /* background: red; */
+  padding-top: 0.25rem;
+  margin-right: 1rem;
+  direction: rtl;
+}
 
 
 /* ========== main side ========= */
