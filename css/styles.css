@@ -387,21 +387,24 @@
 }
 
 .list-links{
-  /* visibility: hidden; */
-  /* height: 0; */
+  visibility: hidden;
+  height: 0;
   direction: rtl;
   list-style: none;
   /* opacity: 19; */
   overflow-y: visible;
-  background: red;
+  /* background: red; */
   padding: 0.25rem;
 }
 
+
+
 .list-link:checked ~ .list-links{
-  visibility: hidden;
+  visibility: visible;
   /* background: red; */
-  height:  0;
+  height:  max-content;
   transition: top .4s;
+  opacity: 12;
 }
 
 .article .article-image {
