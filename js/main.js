@@ -60,14 +60,20 @@ const showSidebar = (toggleId, sidebarId, headerId, mainId) =>{
      // We save the theme and the current icon that the user chose
      localStorage.setItem('selected-theme', getCurrentTheme())
      localStorage.setItem('selected-icon', getCurrentIcon())
-     console.log(s.includes("img/1.png"))
-     console.log(s)
-     if( s.includes("img/1.png") ){
+    //  console.log(s.includes("img/1.png"))
+     console.log(document.body.classList.contains(darkTheme))
+     logo_theme()
+ })
+function logo_theme(){
+
+    if( document.body.classList.contains(darkTheme) ){
         logo1.src="img/n1.png";
         logo2.src="img/n2.png";
-     }else{
+    }else{
         logo1.src="img/1.png";
         logo2.src="img/2.png";
-     }
- })
+    }
+}
+
+logo_theme()
  

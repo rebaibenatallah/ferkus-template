@@ -9,6 +9,12 @@
     <!-- =========== REMIXICONS =========== -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Ferkus</title>
+
+    <style>
+        .panel {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <!-- ============= HEADER ============== -->
@@ -184,8 +190,29 @@
                     <div class="th"><a href="tarjama.html">تعريف بالشيخ</a></div>
                 </div>
 <!-- ====================== change ===================== -->
+                <div class="block1">
+                    <h1>إقتراحات</h1>
+                    <div class="block1">
+                        <button class="accordion">إثراء سلسلة المنتقى من الفتاوى الشرعية</button>
+                        <div class="panel">
+                            <p>السلام عليكم ورحمة الله أولا أوجه شكري إلى الإدارة المشرفة على موقع العلامة الأصولي القوي الفهامة الشيح الفاضل أبو عبد المعز محمد علي فركوس، فالشيخ حفظه الله تعالى جدير بالعناية بعلومه، والالتفاف حوله رعاه الله وكلاه، هذا، وثانيا أني أطلب من الشيخ العالم الرباني مباشرة منه ومن الإدارة بتبليغه بأني متعطش جدا لدروسه الجديدة ومشاريعه العظيمة من سلاسل وشروحات ولقاءات مفتوحة، لطالما انتظرت إصدارات جديدة للشيخ رعاه الله، لاسيما سلسلته المنتقى من الفتاوى الشرعية، فهي في غاية من الدقة والتحري في الاستدلال، فياليتكم تضيفون الجديد من أشرطة هذه السلسلة المباركة وتسارعون في إثرائها بمزيد من الأعداد المباركة، وهكذا بالنسبة لصوتيات أخرى فيما يخص بعض الشروحات المهمة سواء في الفقه وأصوله أو في غير ذلك من أبواب الشريعة المطهرة.
 
-                
+                                فهذا هو طلبي ورجائي للشيخ أن يلبيه، مدركا بذلك مدى كثرة الأشغال لديه، وضيق الوقت عن ذلك، مع الحرص على أن يكون التسجيل في غاية الصفاء والنقاء كما هو الشأن بالنسبة لسلسلة المنتقى من الفتاوى الشرعية.</p>
+                        </div>
+                    </div>
+                    <div class="block1">
+                        <button class="accordion">Section 2</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="block1">
+                        <button class="accordion">Section 3</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
 <!-- ==================================================== -->
             </div>
             <div class="main-side">
@@ -281,5 +308,21 @@
 
     <!-- =============MAIN JS ============== -->
      <script src="js/main.js"></script>
+     <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 </html>

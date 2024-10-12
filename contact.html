@@ -164,9 +164,20 @@
         <div class="main-content">
             <div class="blocks">
                 <div class="block1 block-head">
-                    <div class="th"><a href="#">سجل الزوار</a></div>
+                    <div class="th">
+                        <!-- <a href="#">سجل الزوار</a> -->
+                         <input type="checkbox" class="list-link" id="list-link" >
+                         <div class="th">
+                            <label for="list-link">سجل الزوار</label>
+                         </div>
+                         <ul class="list-links">
+                            <li><a href="iqtirahete.html">اقتراحات</a></li>
+                            <li><a href="intiqadete.html">انتقادات</a></li>
+                            <li><a href="tahani.html">تهانٍ</a></li>
+                         </ul>
+                    </div>
                     <div class="line"></div>
-                    <div class="th"><a href="contact.html">بريد الموقع</a></div>
+                    <div class="th th-active"><a href="contact.html">بريد الموقع</a></div>
                     <div class="line"></div>
                     <div class="th"><a href="objectifs.html">أهداف الموقع</a></div>
                     <div class="line"></div>
@@ -179,25 +190,25 @@
                         <p class="text-small">بإمكانك أن تترك رسالة مستخدما استمارة الاتصال أدناه.</p>
                         <form action="">
                             <label for="name">اسمك:</label>
-                            <input type="text" id="name" name="name" placeholder="name">
+                            <input type="text" id="name" name="name" placeholder="اسمك">
 
                             <label for="mail">عنوان بريدك الإلكتروني:</label>
-                            <input type="text" id="mali" name="mail" placeholder="mail">
+                            <input type="text" id="mali" name="mail" placeholder="البريد الإلكتروني">
 
                             <label for="pays">البلد:</label>
-                            <input type="text" id="pays" name="pays" placeholder="pays">
+                            <input type="text" id="pays" name="pays" placeholder="البلد">
 
                             <label for="subject">الموضوع:</label>
-                            <input type="text" id="subject" name="subject" placeholder="subject">
+                            <input type="text" id="subject" name="subject" placeholder="الموضوع">
 
                             <label for="message">الرسالة:</label>
-                            <textarea type="text" maxlength="255" id="message" name="message" placeholder="message"></textarea>
+                            <textarea type="text" maxlength="255" id="message" name="message" placeholder="الرسالة.."></textarea>
 
                             <label for="required">الصنف:</label>
                             <select id="required" name="required">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
+                                <option value="1">اقتراح</option>
+                                <option value="2">انتقاد</option>
+                                <option value="3">تهنئة</option>
                             </select>
 
                             <input type="submit" value="أرسل البريد الإلكتروني">

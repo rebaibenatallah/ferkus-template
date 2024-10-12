@@ -355,6 +355,23 @@
 
 }
 
+.block1 h1 {
+  font-size: 16px;
+  /* background: red; */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.block1 .accordion {
+  direction: rtl;
+  width: 100%;
+}
+
+.block1 .panel {
+  margin-top: 1rem;
+  direction: rtl;
+}
+
 .blocks .block-head {
   display: flex;
   justify-content: space-evenly;
@@ -362,6 +379,15 @@
 }
 .blocks .block-head .th a {
   color: var(--text-color);
+}
+
+.blocks .block-head .th a:hover {
+  color: var(--first-color);
+  transition: .4s;
+}
+
+.blocks .block-head .th-active a {
+  color: var(--first-color);
 }
 
 .block-head .line {
@@ -724,9 +750,12 @@
   }
    /* .blocks .block-head .th a */
 
-   .blocks .block-head .th a {
+   .blocks .block-head .th a , 
+   .blocks .block-head .th label {
     font-size: 12px;
   }
+
+
 
   .article .text-head {
     font-size: 18px;
