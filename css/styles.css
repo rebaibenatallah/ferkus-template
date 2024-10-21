@@ -49,6 +49,8 @@
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background-color .4s;
+    background-image: url(" ../img/v1.png ");
+    /* background: red; */
   }
 
   a{
@@ -645,7 +647,7 @@
 }
 
 /* for large devices */
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1350px) {
   /* ============== header ================ */
   .header {
     margin: 1rem;
@@ -723,7 +725,7 @@
  
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1350px) {
   .main-content{
     display: block;
   }
